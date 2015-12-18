@@ -68,10 +68,10 @@
 
 /* Define to a macro mangling the given C identifier (in lower and upper
    case), which must not contain underscores, for linking with Fortran. */
-#define H5_FC_FUNC(name,NAME) name ## _
+#define H5_FC_FUNC(name,NAME) NAME
 
 /* As FC_FUNC, but for C identifiers containing underscores. */
-#define H5_FC_FUNC_(name,NAME) name ## _
+#define H5_FC_FUNC_(name,NAME) NAME
 
 /* Define if your system can handle overflow converting floating-point to
    integer values. */
@@ -142,7 +142,7 @@
 /* #undef H5_HAVE_FEATURES_H */
 
 /* Define if support for deflate (zlib) filter is enabled */
-/* #undef H5_HAVE_FILTER_DEFLATE */
+#define H5_HAVE_FILTER_DEFLATE 1
 
 /* Define if support for Fletcher32 checksum is enabled */
 #define H5_HAVE_FILTER_FLETCHER32 1
@@ -157,7 +157,7 @@
 #define H5_HAVE_FILTER_SHUFFLE 1
 
 /* Define if support for szip filter is enabled */
-/* #undef H5_HAVE_FILTER_SZIP */
+#define H5_HAVE_FILTER_SZIP 1
 
 /* Define to 1 if you have the `fork' function. */
 /* #undef H5_HAVE_FORK */
@@ -221,7 +221,7 @@
 /* #undef H5_HAVE_INSTRUMENTED_LIBRARY */
 
 /* Define to 1 if you have the <inttypes.h> header file. */
-#define H5_HAVE_INTTYPES_H 1
+/* #undef H5_HAVE_INTTYPES_H */
 
 /* Define to 1 if you have the `ioctl' function. */
 /* #undef H5_HAVE_IOCTL */
@@ -263,13 +263,13 @@
 /* #undef H5_HAVE_LIBSOCKET */
 
 /* Define to 1 if you have the `sz' library (-lsz). */
-/* #undef H5_HAVE_LIBSZ */
+#define H5_HAVE_LIBSZ 1
 
 /* Define to 1 if you have the `ws2_32' library (-lws2_32). */
 #define H5_HAVE_LIBWS2_32 1
 
 /* Define to 1 if you have the `z' library (-lz). */
-/* #undef H5_HAVE_LIBZ */
+#define H5_HAVE_LIBZ 1
 
 /* Define to 1 if you have the `longjmp' function. */
 #define H5_HAVE_LONGJMP 1
@@ -422,7 +422,7 @@
 #define H5_HAVE_SYS_TYPES_H 1
 
 /* Define to 1 if you have the <szlib.h> header file. */
-/* #undef H5_HAVE_SZLIB_H */
+#define H5_HAVE_SZLIB_H 1
 
 /* Define if we have thread safe support */
 /* #undef H5_HAVE_THREADSAFE */
@@ -472,7 +472,7 @@
 #define H5_HAVE_WINSOCK2_H 1
 
 /* Define to 1 if you have the <zlib.h> header file. */
-/* #undef H5_HAVE_ZLIB_H */
+#define H5_HAVE_ZLIB_H 1
 
 /* Define to 1 if you have the `_getvideoconfig' function. */
 /* #undef H5_HAVE__GETVIDEOCONFIG */
